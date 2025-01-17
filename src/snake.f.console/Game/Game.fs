@@ -28,7 +28,7 @@ let rec createFood (map : (GameObject * Direction)[,]) =
     else
         (x, y)
 
-let createGameContext =
+let createBoard =
     let map = Array2D.init 18 18 (fun _ _ -> (GameObject.Ground, Direction.None))
     map.[8, 8] <- (GameObject.Snake, Direction.Up)
     let foodX, foodY = createFood(map)
