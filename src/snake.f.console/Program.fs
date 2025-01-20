@@ -25,4 +25,4 @@ let rec main gameContext =
         main(Game.gameLoop(gameContext))
         
 [<EntryPoint>]
-main Game.createGameContext
+main Game.createBoard
